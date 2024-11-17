@@ -1,15 +1,13 @@
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Album {
     private List<Disco> faixas;
-    private Set<Artista> artistas;
+    private List<Artista> artistas;
 
     public Album() {
         this.faixas = new ArrayList<>();
-        this.artistas = new HashSet<>();
+        this.artistas = new ArrayList<>();
     }
 
     public List<Disco> getFaixas() {
@@ -28,7 +26,7 @@ public class Album {
         faixas.remove(disco);
     }
 
-    public Set<Artista> getArtistas() {
+    public List<Artista> getArtistas() {
         return artistas;
     }
 

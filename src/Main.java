@@ -6,12 +6,15 @@ public class Main {
 
         Artista artista1 = new Artista("John Lennon", "Rock");
         Artista artista2 = new Artista("Travis Scott", "Hip-Hop");
+        Artista artista3 = new Artista("Eminem", "Rap");
 
         Disco disco1 = new Disco("Mind Games", 1973, artista1);
         Disco disco2 = new Disco("Astro World", 2018, artista2);
+        Disco disco3 = new Disco("Rap God", 2013, artista3);
 
         album.addDisco(disco1);
         album.addDisco(disco2);
+        album.addDisco(disco3);
 
         System.out.println("Álbum - Enzo Dutra");
         album.mostrarAlbum();
